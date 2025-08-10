@@ -1,4 +1,4 @@
-import React from 'react'
+
 import shapeTwo from '../../assets/shape-2.png'
 import './pricing.css'
 import { FaCheck , FaArrowRight} from 'react-icons/fa'
@@ -9,34 +9,51 @@ const Pricing = () => {
     <section className="pricing section" id="pricing">
         <h2 className="section__title text-cs">Pricing</h2>
         <p className="section__subtitle">
-            My <span>Price Board</span>
+            My <span>Service Packages</span>
         </p>
 
         <div className="pricing__container container grid">
             <div className="pricing__item card card-one">
-                <span className="pricing__subtitle text-cs">Basic Website (HTML/CSS/JS)</span>
-                <h3 className="pricing__price">399 <span>€</span> <em></em></h3>
-                <p className="pricing__description">Get a professional, responsive website with HTML, CSS, and JavaScript, perfect for small businesses like plumbers, electricians, and freelancers. Up to 5 custom pages to showcase your services and contact info, all for just 399 €.</p>
+                <span className="pricing__subtitle text-cs">Modern Frontend</span>
+                <h3 className="pricing__price">799 <span>€</span> <em></em></h3>
+                <p className="pricing__description">Professional responsive website built with React, Next.js, and Tailwind CSS. Perfect for modern businesses needing fast, SEO-optimized sites with stunning UI/UX design.</p>
                 <ul className="pricing__list">
                     <li className="list__item">
                         <FaCheck className='list__icon'></FaCheck>
-                        <span>Web Development</span>
+                        <span>React/Next.js Development</span>
                     </li>
                     <li className="list__item">
                         <FaCheck className='list__icon'></FaCheck>
-                        <span>Code Review/Bug Fixing</span>
-                    </li>
-
-                    <li className="list__item">
-                        
-                        <del>Backend Development</del>
+                        <span>Responsive Design</span>
                     </li>
                     <li className="list__item">
-                    <del>Blockchain Solutions</del>
+                        <FaCheck className='list__icon'></FaCheck>
+                        <span>SEO Optimization</span>
+                    </li>
+                    <li className="list__item">
+                        <FaCheck className='list__icon'></FaCheck>
+                        <span>Performance Optimization</span>
+                    </li>
+                    <li className="list__item">
+                        <FaCheck className='list__icon'></FaCheck>
+                        <span>Modern UI/UX Design</span>
+                    </li>
+                    <li className="list__item">
+                        <del>Backend Integration</del>
                     </li>
                 </ul>
 
-                <a href="" className="btn pricing__btn text-cs">
+                <div className="pricing__benefits">
+                    <h4>Why Choose Me?</h4>
+                    <ul>
+                        <li>✅ 4+ Years Experience</li>
+                        <li>✅ 15+ Projects Delivered</li>
+                        <li>✅ Fast Turnaround (1-2 weeks)</li>
+                        <li>✅ Ongoing Support</li>
+                    </ul>
+                </div>
+
+                <a href="#contact" className="btn pricing__btn text-cs">
                     Start Project
                     <FaArrowRight className='pricing__btn-icon'></FaArrowRight>
                 </a>
@@ -47,29 +64,48 @@ const Pricing = () => {
             <div className="pricing__item-wrapper">
                 <span className="pricing__label text-cs">Popular</span>
             <div className="pricing__item card card-one">
-                <span className="pricing__subtitle text-cs">FULL-STACK</span>
-                <h3 className="pricing__price">1200 <span>€</span> <em></em></h3>
-                <p className="pricing__description">This package includes full web development with a custom-designed, responsive front-end using HTML, TailwindCSS, and React.js, tailored specifically to your business needs. It also covers secure backend development, featuring database integration, user authentication, and server-side logic. You'll receive up to 10 pages, contact forms, dynamic content management, and basic SEO optimization, providing a comprehensive and robust online presence.</p>
+                <span className="pricing__subtitle text-cs">Full Stack Solution</span>
+                <h3 className="pricing__price">2,499 <span>€</span> <em></em></h3>
+                <p className="pricing__description">Complete web application with React/Next.js frontend, robust backend with TypeScript, database integration, authentication, and deployment. Perfect for startups and growing businesses.</p>
                 <ul className="pricing__list">
                     <li className="list__item">
                         <FaCheck className='list__icon'></FaCheck>
-                        <span>Web Development</span>
+                        <span>Frontend & Backend</span>
                     </li>
                     <li className="list__item">
                         <FaCheck className='list__icon'></FaCheck>
-                        <span>Code Review/Bug Fixing</span>
-                    </li>
-
-                    <li className="list__item">
-                    <FaCheck className='list__icon'></FaCheck>
-                        <span>Backend Development</span>
+                        <span>Database Integration</span>
                     </li>
                     <li className="list__item">
-                    <del>Blockchain Solutions</del>
+                        <FaCheck className='list__icon'></FaCheck>
+                        <span>Authentication System</span>
+                    </li>
+                    <li className="list__item">
+                        <FaCheck className='list__icon'></FaCheck>
+                        <span>Cloud Deployment</span>
+                    </li>
+                    <li className="list__item">
+                        <FaCheck className='list__icon'></FaCheck>
+                        <span>API Development</span>
+                    </li>
+                    <li className="list__item">
+                        <FaCheck className='list__icon'></FaCheck>
+                        <span>Testing & QA</span>
                     </li>
                 </ul>
 
-                <a href="" className="btn pricing__btn text-cs">
+                <div className="pricing__benefits">
+                    <h4>Why Choose Me?</h4>
+                    <ul>
+                        <li>✅ Full-Stack Expertise</li>
+                        <li>✅ TypeScript & Modern Tech</li>
+                        <li>✅ Scalable Architecture</li>
+                        <li>✅ 3-4 Week Delivery</li>
+                        <li>✅ 3 Months Support</li>
+                    </ul>
+                </div>
+
+                <a href="#contact" className="btn pricing__btn text-cs">
                     Start Project
                     <FaArrowRight className='pricing__btn-icon'></FaArrowRight>
                 </a>
@@ -79,30 +115,49 @@ const Pricing = () => {
             </div>
 
             <div className="pricing__item card card-one">
-                <span className="pricing__subtitle text-cs">FULLSTACK + BLOCKCHAIN</span>
-                <h3 className="pricing__price">4,000 <span>€</span> <em></em></h3>
-                <p className="pricing__description">Get a fully responsive, custom website with secure backend development and blockchain integration. This package includes front-end design, database setup, and blockchain features like smart contracts or secure transactions, perfect for businesses aiming for innovation and security.</p>
+                <span className="pricing__subtitle text-cs">Enterprise Solution</span>
+                <h3 className="pricing__price">5,999 <span>€</span> <em></em></h3>
+                <p className="pricing__description">Premium enterprise-grade solution with AI integration, advanced security, scalable architecture, and comprehensive testing. Includes everything plus blockchain capabilities, AI features, and dedicated support.</p>
                 <ul className="pricing__list">
                     <li className="list__item">
                         <FaCheck className='list__icon'></FaCheck>
-                        <span>Web Development</span>
+                        <span>Full Stack Development</span>
                     </li>
                     <li className="list__item">
                         <FaCheck className='list__icon'></FaCheck>
-                        <span>Code Review/Bug Fixing</span>
-                    </li>
-
-                    <li className="list__item">
-                    <FaCheck className='list__icon'></FaCheck>
-                        <span>Backend Development</span>
+                        <span>AI Integration</span>
                     </li>
                     <li className="list__item">
-                    <FaCheck className='list__icon'></FaCheck>
-                    <span>Blockchain Solutions</span>
+                        <FaCheck className='list__icon'></FaCheck>
+                        <span>Advanced Security</span>
+                    </li>
+                    <li className="list__item">
+                        <FaCheck className='list__icon'></FaCheck>
+                        <span>Blockchain Features</span>
+                    </li>
+                    <li className="list__item">
+                        <FaCheck className='list__icon'></FaCheck>
+                        <span>Microservices Architecture</span>
+                    </li>
+                    <li className="list__item">
+                        <FaCheck className='list__icon'></FaCheck>
+                        <span>CI/CD Pipeline</span>
                     </li>
                 </ul>
 
-                <a href="" className="btn pricing__btn text-cs">
+                <div className="pricing__benefits">
+                    <h4>Why Choose Me?</h4>
+                    <ul>
+                        <li>✅ Enterprise-Grade Quality</li>
+                        <li>✅ AI & Blockchain Expert</li>
+                        <li>✅ Scalable & Secure</li>
+                        <li>✅ 6-8 Week Delivery</li>
+                        <li>✅ 6 Months Support</li>
+                        <li>✅ Dedicated Project Manager</li>
+                    </ul>
+                </div>
+
+                <a href="#contact" className="btn pricing__btn text-cs">
                     Start Project
                     <FaArrowRight className='pricing__btn-icon'></FaArrowRight>
                 </a>
@@ -111,6 +166,29 @@ const Pricing = () => {
             </div>
 
            
+        </div>
+
+        {/* Comparison Section */}
+        <div className="pricing__comparison container">
+            <h3 className="comparison__title text-cs">Why Choose Me Over Others?</h3>
+            <div className="comparison__grid">
+                <div className="comparison__item">
+                    <h4>🚀 Speed & Quality</h4>
+                    <p>4+ years experience means faster delivery without compromising quality. Most developers take 2-3x longer for the same results.</p>
+                </div>
+                <div className="comparison__item">
+                    <h4>💼 Business Focus</h4>
+                    <p>I understand business needs, not just code. Your project will be built to grow your business, not just look pretty.</p>
+                </div>
+                <div className="comparison__item">
+                    <h4>🔒 Long-term Support</h4>
+                    <p>Unlike agencies that disappear after launch, I provide ongoing support and maintenance to ensure your success.</p>
+                </div>
+                <div className="comparison__item">
+                    <h4>🎯 Modern Technology</h4>
+                    <p>Using cutting-edge tech like Next.js 15, TypeScript, and AI integration that most developers haven't mastered yet.</p>
+                </div>
+            </div>
         </div>
 
         <div className="section__deco deco__left">

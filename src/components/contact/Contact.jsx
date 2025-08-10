@@ -62,7 +62,7 @@ const Contact = () => {
                             <FaRegEnvelope />
                         </span>
                         <h3 className="contact__card-title">Email</h3>
-                        <p className="contact__card-data">radoslav@walls.agency</p>
+                        <p className="contact__card-data">contact@devdone.io</p>
                     </div>
                 </div>
 

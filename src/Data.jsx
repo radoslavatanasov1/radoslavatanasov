@@ -53,266 +53,329 @@ export const links = [
 export const services = [
   {
     id: 1,
-    name: 'Frontend Development',
-    title: 'Website and Mobile App',
+    name: 'Full Stack Development',
+    title: 'Modern Web Applications',
     description:
-      'Responsive & Pixel-Perfect components for a website layout. Scalable mobile app.',
+      'Building scalable, high-performance web applications using Next.js, React, TypeScript, and modern backend technologies. Specializing in responsive design and optimal user experience.',
   },
   {
     id: 2,
-    name: ' Backend Development ',
-    title: ' Server-Side Programming and Database Management & APIs ',
+    name: 'FinTech Solutions',
+    title: 'Banking & Financial Platforms',
     description:
-      'Using web frameworks such as Django (Python), Express (Node.js), and Ruby on Rails, Database Management using DBs like MongoDB, SQL, and Integrating APIs.',
+      'Developing secure financial applications, banking platforms, and payment systems with advanced security measures, real-time data processing, and regulatory compliance.',
   },
   {
     id: 3,
-    name: ' Blockchain Development ',
-    title: ' Smart Contract and Web3 ',
+    name: 'AI Integration',
+    title: 'Machine Learning & AI Features',
     description:
-      ' Building Dapps such as DEX, NFT Marketplace, P2E game site, Wallet App, Chain Explorer, and Writing Smart contract, and Integrating contracts to the apps by using Web3 . ',
+      'Integrating AI and machine learning capabilities into web applications, creating intelligent user experiences, and building data-driven solutions with modern AI frameworks.',
   },
   {
     id: 4,
-    name: ' Solving Problems ',
-    title: ' Test & Improvement ',
+    name: 'Enterprise Solutions',
+    title: 'Business Process Automation',
     description:
-      ' Testing(QA test, Unit test..) and reviewing codes. Fixing bugs, Improving codes, and Delivering turn-key products ',
+      'Creating custom enterprise applications, workflow automation, and business intelligence tools that streamline operations and improve productivity.',
   },
   {
     id: 5,
-    name: ' Production ',
-    title: ' Web hosting and Mobile app publishment ',
+    name: 'DevOps & Deployment',
+    title: 'Cloud Infrastructure & CI/CD',
     description:
-      'Phurchasing domain, Hosting to the internet, and Publishing android/ios apps to the google play store.',
+      'Setting up robust deployment pipelines, cloud infrastructure management, and ensuring optimal performance with modern DevOps practices and monitoring.',
   },
 ];
 
 export const skills = [
   {
     id: 1,
-    name: 'HTML/CSS',
-    percentage: 100,
-    description:
-      '',
+    name: 'Next.js',
+    percentage: 95,
+    description: 'Advanced React framework for production-ready applications',
   },
-
   {
     id: 2,
-    name: 'JavaScript',
-    percentage: 100,
-    description:
-      '',
+    name: 'TypeScript',
+    percentage: 90,
+    description: 'Type-safe JavaScript for scalable applications',
   },
-
   {
     id: 3,
     name: 'React.js',
-    percentage: 100,
-    description:
-      '',
+    percentage: 95,
+    description: 'Modern UI library with hooks and state management',
   },
-
   {
     id: 4,
-    name: 'Node.js/Express',
-    percentage: 100,
-    description:
-      '',
+    name: 'Tailwind CSS',
+    percentage: 90,
+    description: 'Utility-first CSS framework for rapid UI development',
   },
-
   {
     id: 5,
-    name: 'MongoDB/MySQL',
-    percentage: 100,
-    description:
-      '',
+    name: 'Python/Django',
+    percentage: 85,
+    description: 'Backend development and API creation',
   },
-
   {
     id: 6,
-    name: 'Typescript',
-    percentage: 100 ,
-    description:
-      '',
+    name: 'PostgreSQL',
+    percentage: 80,
+    description: 'Advanced database design and optimization',
   },
   {
     id: 7,
-    name: 'Blockchain',
-    percentage: 100,
-    description:
-      '',
+    name: 'tRPC',
+    percentage: 85,
+    description: 'Type-safe APIs and full-stack development',
   },
   {
     id: 8,
-    name: 'TailwindCSS',
-    percentage: 100,
-    description:
-      '',
+    name: 'ShadCN UI',
+    percentage: 90,
+    description: 'Modern component library and design systems',
   },
   {
     id: 9,
-    name: 'Python',
-    percentage: 100,
-    description:
-      '',
+    name: 'Framer Motion',
+    percentage: 85,
+    description: 'Advanced animations and micro-interactions',
   },
+  {
+    id: 10,
+    name: 'Web3/Blockchain',
+    percentage: 75,
+    description: 'Smart contracts and decentralized applications',
+  }
 ];
 
 export const projects = [
   {
     id: 1,
     img: Project1,
-    category: 'Frontend',
-    title: 'radoslav.site',
-    description:
-      'Portfolio website coded in vite, React.js, and TailwindCSS.',
+    category: 'FinTech',
+    title: 'Global Finance Guarantee',
+    description: 'Bank guarantee platform built with Next.js and Tailwind CSS, offering Tier-1 bank guarantees, SBLCs, and Letters of Credit.',
+    link: 'https://www.globalfinanceguarantee.com/',
+    tech: ['Next.js', 'Tailwind CSS', 'TypeScript']
   },
   {
     id: 2,
     img: Project2,
-    category: 'Backend',
-    title: 'gdnsolution.com',
-    description:
-      'Gdn Solutions was coded in PHP, Laravel, and MySQL had much fun coding this!',
+    category: 'FinTech',
+    title: 'Heritage Cayman Bank',
+    description: 'Immersive banking platform mockup with smooth animations and responsive design using ShadCN UI and Tailwind CSS.',
+    link: 'https://hltd.vercel.app/',
+    tech: ['Next.js', 'ShadCN UI', 'Tailwind CSS', 'Framer Motion']
   },
   {
     id: 3,
     img: Project3,
-    category: 'Blockchain',
-    title: 'Web3 Buy Me A Cookie',
-    description:
-      'Blockchain based Buy Me A Cookie web app with React.js, Next.js, TailwindCSS and Thirdweb.',
+    category: 'FinTech',
+    title: 'Cayora Finance',
+    description: 'Full-stack financial platform with tRPC, NextAuth, and PostgreSQL for secure financial operations.',
+    link: 'https://cayorafinance.com/',
+    tech: ['Next.js', 'tRPC', 'NextAuth', 'PostgreSQL', 'TypeScript']
   },
   {
     id: 4,
     img: Project4,
-    category: 'Frontend',
-    title: 'tayaliving.com',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+    category: 'Web3',
+    title: 'Master of Complications',
+    description: 'Advanced Web3 platform with authentication and complex data management using modern TypeScript stack.',
+    link: 'https://masterofcomplications.guru/',
+    tech: ['Next.js', 'tRPC', 'NextAuth', 'TypeScript', 'Tailwind CSS']
   },
   {
     id: 5,
     img: Project5,
-    category: 'Blockchain',
-    title: '',
-    description:
-      '',
+    category: 'Tools',
+    title: 'BG Lookup',
+    description: 'CSV parsing and data management tool with modern UI components and efficient data processing.',
+    link: 'https://bglookup.vercel.app/',
+    tech: ['Next.js', 'ShadCN UI', 'Tailwind CSS', 'CSV Processing']
   },
   {
     id: 6,
     img: Project6,
-    category: 'Frontend',
-    title: 'buatiprice.com',
-    description:
-      'buatiprice.com was coded in php, mysql and Laravel.',
+    category: 'Tools',
+    title: 'BG EGN Validator',
+    description: 'Advanced data validation and processing platform with intuitive user interface.',
+    link: 'https://bgegn.vercel.app/',
+    tech: ['Next.js', 'ShadCN UI', 'Tailwind CSS', 'Data Validation']
   },
-
+  {
+    id: 7,
+    img: Project1,
+    category: 'Full Stack',
+    title: 'ViraChemical',
+    description: 'Comprehensive chemical management system built with Python Django, featuring secure operations and inventory management.',
+    link: 'https://virachemical.com/',
+    tech: ['Python', 'Django', 'PostgreSQL', 'Full Stack']
+  },
+  {
+    id: 8,
+    img: Project2,
+    category: 'Agency',
+    title: 'GenCoders Digital',
+    description: 'Digital agency website offering realtor lead generation services with modern Python Flask backend.',
+    link: 'https://gencoders.digital/',
+    tech: ['Python', 'Flask', 'Tailwind CSS', 'Lead Generation']
+  },
+  {
+    id: 9,
+    img: Project3,
+    category: 'Agency',
+    title: 'Walls Agency',
+    description: 'Professional web development agency showcase with Vue.js and modern design principles.',
+    link: 'https://wallsagency-radoslavatanasov1s-projects.vercel.app/',
+    tech: ['Vue.js', 'Tailwind CSS', 'Vercel', 'Modern UI']
+  },
+  {
+    id: 10,
+    img: Project4,
+    category: 'Business',
+    title: 'GDN Solution',
+    description: 'Enterprise business solution platform with comprehensive service offerings and client management.',
+    link: 'https://gdnsolution.com/',
+    tech: ['PHP', 'Laravel', 'MySQL', 'Enterprise']
+  },
+  {
+    id: 11,
+    img: Project5,
+    category: 'E-commerce',
+    title: 'Buati Price',
+    description: 'E-commerce pricing platform with dynamic pricing algorithms and user-friendly interface.',
+    link: 'https://buatiprice.com/',
+    tech: ['PHP', 'Laravel', 'MySQL', 'E-commerce']
+  },
+  {
+    id: 12,
+    img: Project6,
+    category: 'Logistics',
+    title: 'Alpha Cargo Line',
+    description: 'Professional cargo and logistics management platform with tracking and scheduling capabilities.',
+    link: 'https://alphacargoline.com/',
+    tech: ['React', 'Node.js', 'Logistics', 'Tracking']
+  },
+  {
+    id: 13,
+    img: Project1,
+    category: 'AI/ML',
+    title: 'ViWatch AI',
+    description: 'Innovative AI-powered watch platform with machine learning capabilities and modern interface.',
+    link: 'https://viwatchai.com/',
+    tech: ['AI/ML', 'React', 'Python', 'Machine Learning']
+  },
+  {
+    id: 14,
+    img: Project2,
+    category: 'Portfolio',
+    title: 'Personal Portfolio',
+    description: 'Modern portfolio website showcasing skills, projects, and experience with React and modern animations.',
+    link: 'https://radoslav.site',
+    tech: ['React', 'Vite', 'Framer Motion', 'Modern UI']
+  }
 ];
 
 export const cv = [
   {
     id: 1,
-    title: 'CY Hristov Botev',
-    subtitle: 'High School ',
-    date: '2020 - Present',
+    title: 'Software Engineering',
+    subtitle: 'Self-Taught & Continuous Learning',
+    date: '2021 - Present',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'Continuously expanding knowledge in modern web technologies, focusing on React, Next.js, TypeScript, and full-stack development through hands-on projects and industry best practices.',
     category: 'education',
   },
-
-
+  {
+    id: 2,
+    title: 'CY Hristov Botev',
+    subtitle: 'High School Graduate',
+    date: '2020 - 2023',
+    description:
+      'Completed secondary education while simultaneously building a career in web development and gaining practical experience in software engineering.',
+    category: 'education',
+  },
+  {
+    id: 3,
+    title: 'Senior Full Stack Developer',
+    subtitle: 'DevDone.io',
+    date: '2022 - Present',
+    description:
+      'Leading development of complex web applications using Next.js, TypeScript, and modern frameworks. Specializing in FinTech solutions, AI integration, and scalable architecture design.',
+    category: 'experience',
+  },
   {
     id: 4,
-    title: 'Chief Technical Officer',
-    subtitle: 'Soft Tech Inc.',
-    date: '2020 - PRESENT',
+    title: 'Full Stack Developer',
+    subtitle: 'Freelance & Agency Work',
+    date: '2021 - Present',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'Delivered 14+ successful projects including banking platforms, e-commerce solutions, and AI-powered applications. Expertise in React, Next.js, Python, and modern development practices.',
     category: 'experience',
   },
-
   {
     id: 5,
-    title: 'Full Stack web developer',
-    subtitle: 'Kana Design Studio',
-    date: '2019 - 2020',
+    title: 'Frontend Specialist',
+    subtitle: 'Walls Agency',
+    date: '2021 - 2022',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'Developed responsive web applications using Vue.js and React. Focused on creating pixel-perfect designs and optimizing user experience across multiple client projects.',
     category: 'experience',
   },
-
   {
     id: 6,
-    title: 'Blockchain Engineer',
-    subtitle: 'Fiverr.com',
-    date: '2018 - 2019',
+    title: 'Web Developer',
+    subtitle: 'Various Clients',
+    date: '2020 - 2021',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'Started career building websites and learning modern web technologies. Gained experience with HTML, CSS, JavaScript, and basic backend development.',
     category: 'experience',
-  },
-
-  {
-    id: 7,
-    title: 'Dapp developer',
-    subtitle: 'Fiverr.com',
-    date: '2017 - 2018',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    category: 'experience',
-  },
-
-  {
-    id: 7,
-    title: 'Frontend Engineer',
-    subtitle: 'Fiverr.com',
-    date: '2016 - 2017',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    category: 'experience',
-  },
+  }
 ];
 
 export const testimonials = [
   {
     id: 1,
     img: Testimonial1,
-    name: 'Barbara Wilson',
-    author: 'CEO Company',
+    name: 'Sarah Johnson',
+    author: 'CEO, FinTech Startup',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'Radoslav delivered an exceptional banking platform that exceeded our expectations. His expertise in Next.js and modern UI design helped us launch ahead of schedule with a product our users love.',
   },
   {
     id: 2,
     img: Testimonial2,
-    name: 'Charlie Smith',
-    author: 'Designer',
+    name: 'Michael Chen',
+    author: 'Product Manager, Tech Corp',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'Working with Radoslav was a game-changer for our project. His full-stack skills and attention to detail resulted in a robust, scalable solution that handles our complex business requirements perfectly.',
   },
   {
     id: 3,
     img: Testimonial3,
-    name: 'Roy Wang',
-    author: 'Manager GYM',
+    name: 'Emma Rodriguez',
+    author: 'Startup Founder',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'Radoslav built our entire e-commerce platform from scratch. His knowledge of modern frameworks and ability to deliver pixel-perfect designs made him an invaluable partner in our success.',
   },
   {
     id: 4,
     img: Testimonial4,
-    name: 'Jennifer Smith',
-    author: 'CEO & Founder',
+    name: 'David Thompson',
+    author: 'CTO, Digital Agency',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'I highly recommend Radoslav for any complex web development project. His expertise in React, TypeScript, and backend technologies helped us deliver multiple client projects on time and within budget.',
   },
   {
     id: 5,
     img: Testimonial5,
-    name: 'Paul Freeman',
-    author: 'Photographer',
+    name: 'Lisa Park',
+    author: 'Business Owner',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'Radoslav transformed our business with a custom web application that streamlined our operations. His professional approach and technical expertise made the entire process smooth and efficient.',
   },
 ];

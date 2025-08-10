@@ -74,6 +74,7 @@
 
 .home__social-links:hover {
     color: var(--primary-color);
+    transform: translateY(-3px) scale(1.1);
 }
 
 .home__btns{
@@ -103,11 +104,18 @@
 }
 
 .home__banner{
-    background-color: var(--primary-color);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     padding-bottom: 100%;
     border-radius: 50%;
     position: relative;
     z-index: 1;
+    box-shadow: 0 20px 60px rgba(79, 70, 229, 0.2);
+    transition: all 0.3s var(--transition);
+}
+
+.home__banner:hover {
+    transform: scale(1.02);
+    box-shadow: 0 25px 80px rgba(79, 70, 229, 0.3);
 }
 
 .home__profile{
@@ -119,9 +127,10 @@
 }
 
 .home__data{
-    border: 2px solid var(--border-color);
-    background: var(--container-color);
-    box-shadow: var(--shadow);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--card-gradient);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     padding-inline: 20px;
     width: 250px;
     height: 82px;
@@ -130,6 +139,13 @@
     align-items: center;
     position: absolute;
     z-index: 1;
+    transition: all 0.3s var(--transition);
+}
+
+.home__data:hover {
+    transform: translateY(-3px);
+    border-color: rgba(79, 70, 229, 0.3);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
 .home__data-one{

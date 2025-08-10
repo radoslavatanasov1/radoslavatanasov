@@ -5,7 +5,9 @@
 /*CSS Variables*/
 :root {
   
-  --primary-color: rgb(254,120,198);
+  --primary-color: rgb(79, 70, 229);
+  --secondary-color: rgb(139, 92, 246);
+  --accent-color: rgb(34, 197, 94);
   --title-color: hsl(0, 0%, 100%);
   --text-color:hsl(0,0%,92%);
   --bg-color: hsl(216, 18%, 16%);
@@ -13,13 +15,16 @@
   --container-color: hsl(217, 18%, 14%);
   --border-color: hsl(210, 2%, 65%);
   --first-gradient: linear-gradient(
-    0deg, var(--bg-color-alt) 0%, var(--bg-color) 100%
+    135deg, var(--bg-color-alt) 0%, var(--bg-color) 100%
   );
   --second-gradient: linear-gradient(
-    180deg, var(--bg-color-alt) 0%, var(--bg-color) 100%
+    135deg, var(--bg-color) 0%, var(--bg-color-alt) 100%
   );
   --third-gradient: linear-gradient(
-    180deg, var(--bg-color) 0%, var(--bg-color) 100%
+    135deg, rgba(79, 70, 229, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%
+  );
+  --card-gradient: linear-gradient(
+    135deg, var(--container-color) 0%, rgba(79, 70, 229, 0.03) 100%
   );
 
   /*Typography*/
@@ -45,6 +50,28 @@
 
   /*transition*/
   --transition: cubic-bezier(0.3,0,0.3,1);
+  
+  /*Modern Animations*/
+  --bounce-transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Scroll Progress Bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 9999;
+}
+
+.scroll-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  transform-origin: 0%;
+  transition: transform 0.1s ease-out;
+  box-shadow: 0 0 10px rgba(79, 70, 229, 0.3);
 }
 
  /*LIGHT THEME*/
@@ -101,7 +128,8 @@ font-size: var(--normal-font-size);
 
 body{
   color: var(--text-color);
-  background-color: var(--bg-color);
+  background: var(--bg-color);
+  background-attachment: fixed;
 }
 
 body.no-scroll{
@@ -188,7 +216,7 @@ img{
     content: '';
     position: absolute;
     inset: 2px;
-    background-color: var(--primary-color);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     border-radius: inherit;
     transform: scale(0.3);
     filter: blur(10px);
@@ -245,11 +273,20 @@ img{
 }
 
 .card{
-  background-color: var(--container-color);
+  background: var(--card-gradient);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   overflow: hidden;
   text-align: left;
   position: relative;
   z-index: 10;
+  transition: all 0.3s var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(99, 102, 241, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 .card-one{
@@ -277,6 +314,8 @@ img{
 
 .link:hover .link__icon{
   margin-left: 15px;
+  transform: scale(1.1);
+  color: var(--secondary-color);
 }
 
 .c__shape {

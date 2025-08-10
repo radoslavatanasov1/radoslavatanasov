@@ -1,5 +1,5 @@
 .skills{
-    background-image: var(--third-gradient);
+    background-image: var(--second-gradient);
 }
 
 .skills__container{
@@ -48,18 +48,25 @@
 
 .skills__percentage{
     display: block;
-    background-color: var(--primary-color);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     position: relative;
+    border-radius: 2px;
 }
 
 .skills__percentage span{
-    background-color: var(--container-color);
-    border: 2px solid var(--border-color);
-    box-shadow: var(--shadow);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border: 2px solid var(--title-color);
+    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.2);
     width: 25px;
     height: 25px;
     border-radius: 50%;
     position: absolute;
     right: 0;
     top: -12px;
+    transition: all 0.3s var(--transition);
+}
+
+.skills__item:hover .skills__percentage span {
+    transform: scale(1.2);
+    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.4);
 }

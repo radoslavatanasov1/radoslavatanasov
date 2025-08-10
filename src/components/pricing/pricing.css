@@ -1,5 +1,5 @@
 .pricing{
-    background-image: var(--third-gradient);
+    background-image: var(--first-gradient);
 }
 
 .pricing__container{
@@ -107,4 +107,98 @@
 
 .pricing__btn:hover .pricing__btn-icon {
     right: 35px;
+}
+
+/* Pricing Benefits Section */
+.pricing__benefits {
+    background: var(--card-gradient);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid var(--border-color);
+}
+
+.pricing__benefits h4 {
+    color: var(--primary-color);
+    font-size: var(--h4-font-size);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.pricing__benefits ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pricing__benefits li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: var(--small-font-size);
+    line-height: 1.4;
+}
+
+.pricing__benefits li:last-child {
+    border-bottom: none;
+}
+
+/* Comparison Section */
+.pricing__comparison {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.comparison__title {
+    font-size: var(--h2-font-size);
+    margin-bottom: 40px;
+    color: var(--title-color);
+}
+
+.comparison__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.comparison__item {
+    background: var(--card-gradient);
+    padding: 30px 20px;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s var(--transition);
+}
+
+.comparison__item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.comparison__item h4 {
+    color: var(--primary-color);
+    font-size: var(--h4-font-size);
+    margin-bottom: 15px;
+}
+
+.comparison__item p {
+    color: var(--text-color);
+    line-height: 1.6;
+    font-size: var(--small-font-size);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .pricing__container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .comparison__grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .pricing__benefits {
+        padding: 15px;
+        margin: 15px 0;
+    }
 }

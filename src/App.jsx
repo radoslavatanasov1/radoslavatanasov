@@ -1,4 +1,7 @@
 import './App.css'
+import { HelmetProvider } from 'react-helmet-async'
+import SEOHead from './components/seo/SEOHead'
+import SEOAdmin from './components/seo/SEOAdmin'
 import Blog from './components/blog/Blog'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
@@ -14,20 +17,23 @@ import Testimonials from './components/testimonials/Testimonials'
 function App() {
 
   return (
-   <div className="main main">
-    <Header/>
-      <Home/>
-      <Services/>
-      <Skills/>
-      <Portfolio/>
-      <Resume/>
-      <Testimonials/>
-      <Pricing/>
-      <Blog/>
-      <Contact/>
-      <Footer/>
-      
-   </div>
+    <HelmetProvider>
+      <SEOHead />
+      <div className="main main">
+        <Header/>
+        <Home/>
+        <Services/>
+        <Skills/>
+        <Portfolio/>
+        <Resume/>
+        <Testimonials/>
+        <Pricing/>
+        <Blog/>
+        <Contact/>
+        <Footer/>
+      </div>
+      <SEOAdmin />
+    </HelmetProvider>
   )
 }
 

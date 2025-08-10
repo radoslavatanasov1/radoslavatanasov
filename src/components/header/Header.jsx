@@ -12,6 +12,8 @@ const getStorageTheme = () =>{
     if(localStorage.getItem('theme')){
         theme = localStorage.getItem('theme');
     }
+    
+    return theme;
 }
 
 const Header = () => {
@@ -85,13 +87,13 @@ const Header = () => {
 
                     <div className="header__socials">
 
-                        <a href="https://www.linkedin.com/in/radoslavatanasovde/" target='_blank' className="footer__social-links">
+                        <a href="https://www.linkedin.com/in/radoslavatanasov1/" target='_blank' className="footer__social-links">
                             <FaLinkedin/>
                         </a>
                         <a href="https://github.com/radoslavatanasov1" target='_blank' className="footer__social-links">
                             <FaGithub/>
                         </a>
-                        <a href="mailto:radoslav@walls.agency" target='_blank' className="footer__social-links">
+                        <a href="mailto:contact@devdone.io" target='_blank' className="footer__social-links">
                             <FaMailchimp/>
                         </a>
 

@@ -21,6 +21,7 @@
 
 .footer__social-links:hover {
     color: var(--primary-color);
+    transform: translateY(-3px) scale(1.15);
 }
 
 .footer__copyright:nth-child(2){

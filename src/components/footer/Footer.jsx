@@ -8,19 +8,19 @@ const Footer = () => {
         <div className="footer__container container grid">
         <div className="footer__socials">
 
-                <a href="https://www.linkedin.com/in/radoslavatanasovde" target='_blank' className="footer__social-links">
+                <a href="https://www.linkedin.com/in/radoslavatanasov1/" target='_blank' className="footer__social-links">
                     <FaLinkedin/>
                 </a>
                 <a href="https://github.com/radoslavatanasov1" target='_blank' className="footer__social-links">
                     <FaGithub/>
                 </a>
-                <a href="mailto:radoslavatanasovoffical1@gmail.com" target='_blank' className="footer__social-links">
+                <a href="mailto:contact@devdone.io" target='_blank' className="footer__social-links">
                     <FaMailchimp/>
                 </a>
 
             </div>
   
-            <p className="footer__copyright text-cs">Designed and Developed by <span>Radoslav A.</span></p>
+            <p className="footer__copyright text-cs">© 2025 Designed and Developed by <span>Radoslav A.</span></p>
         </div>
     </footer>
   )

@@ -121,6 +121,15 @@
         height: 200px;
     }
 
+    .portfolio__tech {
+        gap: 6px;
+    }
+
+    .tech__tag {
+        font-size: var(--tiny-font-size);
+        padding: 4px 10px;
+    }
+
     .resume__container{
         grid-template-columns: 1fr;
         row-gap: 40px;
@@ -307,6 +316,16 @@
 
     .portfolio__img{
         height: 180px;
+    }
+
+    .tech__tag {
+        font-size: 10px;
+        padding: 3px 8px;
+    }
+
+    .portfolio__tech {
+        gap: 4px;
+        margin: 10px 0;
     }
 
     .resume__header{
