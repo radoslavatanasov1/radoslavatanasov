@@ -5,9 +5,10 @@
 /*CSS Variables*/
 :root {
   
-  --primary-color: rgb(79, 70, 229);
-  --secondary-color: rgb(139, 92, 246);
-  --accent-color: rgb(34, 197, 94);
+
+  --primary-color: rgb(255, 111, 97);   /* Warm coral red */
+  --secondary-color: rgb(58, 175, 169); /* Teal ocean */
+  --accent-color: rgb(255, 199, 44);    /* Golden sunflower */
   --title-color: hsl(0, 0%, 100%);
   --text-color:hsl(0,0%,92%);
   --bg-color: hsl(216, 18%, 16%);
