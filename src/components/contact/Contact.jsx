@@ -13,23 +13,42 @@ const Contact = () => {
         setForm({...form, [name]: value});
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
+        console.log('Attempting to send email with form data:', form);
+        
+        try {
+            const response = await fetch('http://localhost:3000/api/send-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(form)
+            });
+            
+            if (!response.ok) {
+                const errorText = await response.text();
+                console.error('Server response:', response.status, errorText);
+                throw new Error(`Server error: ${response.status} - ${errorText || 'No error message'}`);
+            }
 
-        fetch('https://formspree.io/f/mwpewwaj', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(form)
-        }).then((response) => {
-            if (response.ok) {
+            const data = await response.json();
+            console.log('API Response:', data);
+            
+            if (data.success) {
                 setSuccessMessage('Your message has been sent successfully!');
                 setForm({name: '', email: '', subject: '', message: ''});
             } else {
-                setSuccessMessage('Oops! Something went wrong.');
+                throw new Error(data.error || 'Failed to send email');
             }
-        });
+        } catch (error) {
+            console.error('Detailed error sending email:', error);
+            console.error('Error stack:', error.stack);
+            console.error('Full error object:', JSON.stringify(error, null, 2));
+            setSuccessMessage(`Error: ${error.message || 'Something went wrong'}`);
+            // Log the form data for debugging
+            console.log('Form data at time of error:', form);
+        }
     };
 
     return (
